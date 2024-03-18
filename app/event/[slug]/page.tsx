@@ -1,3 +1,4 @@
+import H1 from "@/components/H1";
 import Image from "next/image";
 
 type EventPageProps = {
@@ -25,6 +26,19 @@ export default async function EventPage({ params }: EventPageProps) {
           quality={50}
           className="object-cover blur-2xl z-0"
         />
+
+        <div className="z-1 relatives">
+          <Image
+            src={event.imageUrl}
+            alt={event.name}
+            width={300}
+            height={201}
+          />
+
+          <div>
+            <H1>{event.name}</H1>
+          </div>
+        </div>
       </section>
 
       <div></div>
