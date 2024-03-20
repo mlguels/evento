@@ -22,9 +22,7 @@ export default function EventCard({ event }: EventCardProps) {
         rounded-xl 
         overflow-hidden 
         relative
-        transition
-        hover:scale-105
-        active:scale-[1.02]
+        state-effect
       "
       >
         <Image

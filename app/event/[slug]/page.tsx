@@ -78,10 +78,7 @@ export default async function EventPage({ params }: EventPageProps) {
                 border-2
                 sm:w-full  
                 py-2
-                focus:scale-105
-                hover:scale-105
-                active:scale-[1.02]
-                transition
+                state-effect
               "
             >
               Get Tickets
