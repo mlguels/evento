@@ -38,7 +38,7 @@ export default async function EventPage({ params }: EventPageProps) {
           priority
         />
 
-        <div className="z-1 flex flex-col lg:flex-row gap-6 lg:gap-16 relatives">
+        <div className="z-1 flex flex-col lg:flex-row gap-6 lg:gap-16 relative">
           <Image
             src={event.imageUrl}
             alt={event.name}
