@@ -1,6 +1,6 @@
 import { Suspense } from "react";
 
-import EventsList from "@/components/EventsList";
+import EventsList from "@/components/events-list";
 import H1 from "@/components/H1";
 import Loading from "./loading";
 
