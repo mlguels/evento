@@ -1,9 +1,7 @@
+import { Suspense } from "react";
+
 import EventsList from "@/components/EventsList";
 import H1 from "@/components/H1";
-import { EventoEvent } from "@/lib/types";
-import { sleep } from "@/lib/utils";
-import events from "events";
-import { Suspense } from "react";
 import Loading from "./loading";
 
 type EventsPageProps = {
