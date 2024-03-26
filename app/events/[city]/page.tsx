@@ -1,4 +1,5 @@
 import { Suspense } from "react";
+import { Metadata } from "next";
 
 import EventsList from "@/components/events-list";
 import H1 from "@/components/H1";
@@ -12,11 +13,11 @@ type Props = {
   };
 };
 
-export function generateMetadata({ params }: Props) {
+export function generateMetadata({ params }: Props): Metadata {
   const city = params.city;
 
   return {
-    title: `Events in ${capitalize(city)}`,
+    title: city === "all" ? "All Events" : `Events in ${capitalize(city)}`,
   };
 }
 
