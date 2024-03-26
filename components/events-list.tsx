@@ -1,5 +1,7 @@
-import EventCard from "./event-card";
 import { getEvents } from "@/lib/utils";
+
+import EventCard from "./event-card";
+import PaginationControls from "./pagination-controls";
 
 type EventsListProps = {
   city: string;
@@ -14,6 +16,8 @@ export default async function EventsList({ city, page }: EventsListProps) {
       {events.map((event) => (
         <EventCard key={event.id} event={event} />
       ))}
+
+      <PaginationControls />
     </section>
   );
 }
