@@ -5,7 +5,7 @@ import Link from "next/link";
 
 import { motion, useScroll, useTransform } from "framer-motion";
 
-import { EventoEvent } from "@/lib/types";
+import { EventoEvent } from "@prisma/client";
 import { useRef } from "react";
 
 type EventCardProps = {
