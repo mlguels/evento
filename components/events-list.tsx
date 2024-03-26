@@ -3,10 +3,11 @@ import { getEvents } from "@/lib/utils";
 
 type EventsListProps = {
   city: string;
+  page?: number;
 };
 
-export default async function EventsList({ city }: EventsListProps) {
-  const events = await getEvents(city);
+export default async function EventsList({ city, page }: EventsListProps) {
+  const events = await getEvents(city, page);
 
   return (
     <section className="max-w-[1100px] flex flex-wrap gap-10 justify-center px-[20px]">
